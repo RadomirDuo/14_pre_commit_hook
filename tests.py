@@ -14,7 +14,7 @@ class QuadraticEquationTestCase(unittest.TestCase):
         self.assertEqual(root2, 1)
 
     def test_second_root_is_none_if_one_solution(self):
-        root1, root2 = get_roots(1, -2, 1)
+        root1, root2 = get_roots(1, -2, 100)
         self.assertIsNotNone(root1)
         self.assertIsNone(root2)
 
